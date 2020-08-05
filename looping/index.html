@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Vue.js</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+
+    <div id="vue-app">
+
+        <h1>looping with lists</h1>
+        <ul>
+            <li v-for="(elements,index) in children">{{ index }}. {{ elements }}</li>
+        </ul>
+        <ul>
+            <li v-for="(elements,index) in parents">{{index}}. {{ elements.name }} - {{ elements.age }}</li>
+        </ul>
+        <template v-for="elements in parents">
+          <div v-for="(val,key) in elements ">
+            <p>{{ key }} - {{ val }}</p>
+          </div>
+          
+        </template>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

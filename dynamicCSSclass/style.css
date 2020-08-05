@@ -1,0 +1,22 @@
+span {
+    background: red;
+    display: inner-block;
+    padding: 10px;
+    color: fff;
+    margin: 10px 0;
+}
+
+.available span {
+    /*
+style all <span> elements with class available
+  */
+    background: green;
+}
+
+.nearby span:after {
+    /*
+    insert content after the <span> elements and style <span> with class nearby
+    */
+    content: "nearby";
+    margin-left: 10px;
+}

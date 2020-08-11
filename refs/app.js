@@ -7,6 +7,7 @@ new Vue({
     methods: {
         readRefs: function() {
             console.log(this.$refs.test.innerText);
+            //this.$refs.refName,propertyName
             this.output = this.$refs.input.value;
         }
     }
